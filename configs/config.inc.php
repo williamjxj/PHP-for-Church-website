@@ -27,15 +27,15 @@ $config = array(
 
 if (preg_match("/^(192\.168|127\.)/", $_SERVER['REMOTE_ADDR']) || preg_match("/::1/", $_SERVER['REMOTE_ADDR'])) { 
   define("HOST", "localhost");
-  define("USER", "church");
-  define("PASS", "Benjamin001!");
-  define("DB_NAME", "church");
+  define("USER", "");
+  define("PASS", "");
+  define("DB_NAME", "");
 }
 else {
-  define("HOST", "williamjxj.ipowermysql.com");
-  define("USER", "church");
-  define("PASS", "Benjamin001!");
-  define("DB_NAME", "church");
+  define("HOST", "");
+  define("USER", "");
+  define("PASS", "!");
+  define("DB_NAME", "");
 }
 
 function browser_id() {
