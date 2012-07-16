@@ -1,0 +1,82 @@
+{$url={$smarty.server.SCRIPT_NAME}}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Surrey One Family</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="robots" content="">
+<script language="javascript" type="text/javascript" src="{$config.path}js/jquery-1.5.1.min.js"></script>
+<link type="text/css" href="{$config.ipath}menu/menu.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="{$config.ipath}menu/menu.js"></script>
+<link rel="stylesheet" href="{$config.ipath}FlexSlider/flexslider.css" type="text/css" media="screen" />
+<script language="javascript" type="text/javascript" src="{$config.ipath}FlexSlider/jquery.flexslider-min.js"></script>
+<script language="javascript" type="text/javascript" src="{$config.ipath}jquery.address-1.4/jquery.address-1.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{$config.ipath}colortip-1.0/colortip-1.0-jquery.css" />
+<script language="javascript" type="text/javascript" src="{$config.ipath}colortip-1.0/colortip-1.0-jquery.js"></script>
+<script language="javascript" type="text/javascript" src="{$config.path}js/cookie.js"></script>
+<link type="text/css" rel="stylesheet" href="{$config.path}css/ontc.css" />
+<link type="text/css" rel="stylesheet" href="{$config.path}css/surreycac.css" />
+<link type="text/css" rel="stylesheet" href="{$config.path}css/register_login.css" />
+<script language="javascript" type="text/javascript" src="include/init.js"></script>
+<!-- fancybox -->
+<script type="text/javascript" src="{$config.ipath}jquery.fancybox-1.3.4/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="{$config.ipath}jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="{$config.ipath}jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<link rel="stylesheet" href="{$config.ipath}jquery.fancybox-1.3.4/style.css" />
+<!---->
+<script language="javascript" type="text/javascript">
+$(document).ready(function(){
+  $('a[title]', '#main').colorTip({ color:'yellow' });
+});
+$(window).load(function() {
+  $('.flexslider').flexslider();
+});
+
+</script>
+<script language="javascript" type="text/javascript">
+$(document).ready(function() { 
+  if ($('#section', '#right').length)
+    $('#context').removeClass('no-right').addClass('yes-right');
+  else
+    $('#context').removeClass('yes-right').addClass('no-right');
+
+  if ($('#nav', '#left').length)
+    $('#context').removeClass('no-left').addClass('yes-left');
+  else
+    $('#context').removeClass('yes-left').addClass('no-left');
+
+  if ($('#banner').length) {
+    $('#context').removeClass('banner-no').addClass('banner-yes');
+  }
+  else {
+    $('#context').removeClass('banner-yes').addClass('banner-no');
+  }
+});
+</script>
+</head>
+<body id="{$config.browser}" class="home">
+<div id="container">
+  <div id="header"> {include file="{$header_template}"}
+    {if {$login_template}}
+    {include file="{$login_template}"} 
+    {/if}</div>
+  <div id="context">
+    <div id="banner"> {if is_array($main.banner)}
+      {foreach $main.banner as $b}
+      {$b}
+      {/foreach}
+      {else}
+      {$main.banner}
+      {/if} </div>
+    <div id="left">{include file="{$left_template}"}</div>
+    <div id="right">{include file="{$right_template}"}</div>
+    <div id="main">{include file="{$main_template}"}</div>
+    <!--div style="clear:both"></div-->
+  </div>
+</div>
+<div class="clear:both;"></div>
+<div id="footer">{include file="footer.tpl.html"}</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<link rel="stylesheet" type="text/css" href="login.css" />
+<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="cookie.js"></script>
+<div class="sidebar-box blue-head">
+  <h3>User Login</h3>
+  <div class="inner">
+    <form id="login_form" action="member.php" method="post">
+      <div>
+        <input type="text" name="username" id="username" class="textinput" placeholder="Username" data-prompt-position="topLeft" autocomplete="on" />
+      </div>
+      <div>
+        <input type="password" name="password"  id="password" class="textinput" placeholder="Password" autocomplete="on" />
+      </div>
+      <div>
+        <input type="checkbox" name="rememberme" id="rememberme" class="checkbox" />
+        <label for="rememberme">Remember Me</label>
+      </div>
+      <div class="login-links"> <a href="forgot_passwd.php" title="Forget Password">Forgot Password?</a> </div>
+      <div class="submitLogin">
+        <div class="green-btn">
+          <input type="submit" id="login_submit" name="login_submit" value="Login" />
+        </div>
+        <div class="blue-btn">
+          <input type="reset" name="reset" value="Reset" />
+        </div>
+        <span id="login_msg" name="login_msg" style="display: none"> <img src="images/spinner.gif" width="16" height="16" border="0" align="processing, please wait..." /></span> </div>
+    </form>
+  </div>
+</div>
+<script language="javascript" type="text/javascript">
+jQuery.fn.func = function() {}
+$(function() {
+  var form = $('#login_form');
+  var submit = $('#login_submit');
+  var msg = $('#login_msg');
+
+  $(form).submit(function(event){
+	event.preventDefault();
+		$.ajax({
+			type: $(this).attr('method'),
+			url: $(this).attr('action'),
+			data: $(this).serialize(),
+            dataType: 'json',
+			beforeSend: function() {
+				$(submit).hide();
+				$(msg).show();
+			},
+			success: function(data) {
+				if(data instanceof Object) {
+					document.location.href='index.php?t1='+$.nt()+'&t='+$.cookie('sales[firefox][theme]');
+				}
+				else {
+					$(submit).show();
+					$(msg).hide();
+					if ($('#div1').length>0) {
+						$('#div1').show();
+					} else {
+						$('<div></div>').attr({ 'id':'div1','class':'noUser' }).html("No such user, Please try again.").insertAfter(form);
+						$('#username').select().focus();	
+					}
+					if(data instanceof Array) {
+						alert(data);
+					}
+				}
+			}
+		});
+	return false;
+  });
+
+  if( $.cookie("pams_user") && $.cookie("pams_pass") ) {
+	$('#username').val($.cookie("pams_user"));
+	$('#password').val($.cookie("pams_pass"));	
+	$('#rememberme').attr('checked', true);
+  }
+  else {
+	$('#rememberme').attr('checked', false);
+  }
+  // $('#username').select().focus();	
+});
+</script>

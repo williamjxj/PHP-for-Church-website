@@ -1,0 +1,27 @@
+{$url={$smarty.server.SCRIPT_NAME}}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$config.header.title}</title>
+<meta name="description" content="{$config.header.description}" />
+<meta name="keywords" content="{$config.header.keywords}" />
+<meta name="robots" content="{$config.header.meta_robots|default:$config.header.meta_defaultrobots}">
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="{$config.path}css/ie8.css" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="{$config.path}css/ie7.css" /><![endif]-->
+<link type="text/css" rel="stylesheet" href="{$config.path}css/styles.css" />
+<script language="javascript" type="text/javascript" src="{$config.path}js/jquery-1.5.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="{$config.path}js/cookie.js"></script>
+</head>
+<body id="{$config.browser}">
+<div id="extra"></div>
+<div id="container">
+  <div id="header"> {include file="{$header_template}"} </div>
+  <div id="context" class="one-column">
+    <div id="main">{include file="{$main_template}"}</div>
+    <div style="clear:both"></div>
+  </div>
+</div>
+<div id="footer"> {include file="{$footer_template}"} </div>
+</body>
+</html>

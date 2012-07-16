@@ -1,0 +1,39 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script language="javascript" type="text/javascript">
+$(document).ready(function() { 
+  if ($('#section', '#right').length)
+    $('#context').removeClass('no-right').addClass('yes-right');
+  else
+    $('#context').removeClass('yes-right').addClass('no-right');
+
+  if ($('#nav', '#left').length)
+    $('#context').removeClass('no-left').addClass('yes-left');
+  else
+    $('#context').removeClass('yes-left').addClass('no-left');
+
+  if ($('#banner').length) {
+    $('#context').removeClass('banner-no').addClass('banner-yes');
+  }
+  else {
+    $('#context').removeClass('banner-yes').addClass('banner-no');
+  }
+});
+
+</script>
+
+{if isset($fancybox_template)}
+    {include file="{$fancybox_template}"}
+{else}
+<div id="banner"> {if is_array($main.banner)}
+  {foreach $main.banner as $b}
+  {$b}
+  {/foreach}
+  {else}
+  {$main.banner}
+  {/if} </div>
+
+<div id="left"> {include file="{$left_template}"} </div>
+<div id="right"> {include file="{$right_template}"} </div>
+<div id="main"> {include file="{$main_template}"} </div>
+<div style="clear:both"></div>
+{/if}

@@ -1,0 +1,67 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--div class="footer_area_inner">&nbsp;</div-->
+{$url={$SCRIPT_NAME}}
+<div id="footer-inner"> {if isset($footer) && is_array($footer) && count($footer)>0}
+  {foreach $footer as $id=>$h} 
+  {if $h.left1=='N'}
+  {$left='&l=N'}
+  {else}
+  {$left='&l=Y'}
+  {/if}
+  {if {$h.right3} == 'N'}
+  {$right='&r=N'}
+  {else}
+  {$right='&r=Y'}
+  {/if}
+  <div class="col_275">
+    <div class="img_275">
+      <div class="div_275" ><h3><a id="{$id}" href="{$url}?js_get_module=1{$left}{$right}&mid={$h.mid}" class="ajax" title="{$h.name}">{$h.name|escape:'html'}</a> </h3>{if isset($h.submenu) && is_array($h.submenu) && count($h.submenu)>0}
+        <ul>
+          {foreach $h.submenu as $m=>$n}
+          <li title="{$n}" class="fmenu"><a id="{$m}" href="{$url}?js_get_module=1{$left}{$right}&mid={$h.mid}&amp;cid={$m}" title="{$n|escape:'html'}" class="sajax"><span>{$n}</span></a></li>
+          {/foreach}
+        </ul>
+        {/if} </div>
+    </div>
+  </div>
+  {/foreach}
+  {/if} </div>
+<div id="copyright"> &copy;2012&nbsp;&nbsp;  基督教素里华人宣道会 | Surrey Christian Alliance Church &nbsp;&nbsp;<abbr title="Surrey Christian Alliance Church">(surreyonefamily.ca)</abbr><br />
+  15421-110 Avenue,Surrey, BC. V3R 0X1 Tel:(604)930-9933 Email: <abbr title="admin@surreyonefamily.ca">admin@surreyonefamily.ca</abbr> </div>
+<script language="javascript" type="text/javascript">
+$(document).ready(function() {
+  $("#footer-inner a.ajax").address(function() {  
+    return $(this).attr('href').replace(/^#/, '');  
+  });
+  
+  $('a.ajax', '#footer-inner').click(function(e) {
+    e.preventDefault();
+    $.ajax({
+      type: 'get',
+      url: $(this).attr('href'),
+      success: function(data) {
+        $('#context').html(data);
+      }
+    });
+    return false;
+  });
+ 
+ $('ul li a.sajax', '#footer-inner').click(function(e) {
+  e.preventDefault();
+  var tm3 = $(this);
+  var t1 = $(this).attr('href');
+  $.get(t1, function(data) {
+    $('#context').html(data);
+    $('#nav ul li', '#left').removeClass('active');
+    var m = $(tm3).parent('li').attr('title');
+    var n = $('#nav ul li', '#left').find("a:contains("+m+")");
+    $(n).parent().addClass('active');
+    $('ul li a.parent', '#menu').removeClass('highlight');
+    $(tm3).closest('div').parent('li').find('a.parent').addClass('highlight');
+  });
+  return false;
+ });
+  
+  
+});
+</script>

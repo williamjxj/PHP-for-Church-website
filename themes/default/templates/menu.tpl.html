@@ -1,0 +1,73 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+{$url={$SCRIPT_NAME}}
+{if isset($header.menu) && is_array($header.menu) && count($header.menu)>0}
+<ul class="menu">
+  {foreach $header.menu as $id=>$h}
+  <li> {if $h.url_flag=='Y'} <a id="{$id}" href="{$h.url}" class="parent ajax1" title="{$h.name}"><span>{$h.name|escape:'html'}</span></a>{else}
+    {if $h.left1=='N'}
+    {$left='&l=N'}
+    {else}
+    {$left='&l=Y'}
+    {/if}
+    {if {$h.right3} == 'N'}
+    {$right='&r=N'}
+    {else}
+    {$right='&r=Y'}
+    {/if} <a id="{$id}" href="{$url}?js_get_module=1{$left}{$right}&mid={$h.mid}" class="parent ajax" title="{$h.name}"><span>{$h.name|escape:'html'}</span></a>{/if}
+    {if isset($h.submenu) && is_array($h.submenu) && count($h.submenu)>0}
+    <div>
+      <ul>
+        {foreach $h.submenu as $m=>$n}
+        <li title="{$n}"><a id="{$m}" href="{$url}?js_get_module=1{$left}{$right}&mid={$h.mid}&amp;cid={$m}" title="{$n|escape:'html'}" class="sajax"><span>{$n}</span></a></li>
+        {/foreach}
+      </ul>
+    </div>
+    {/if} </li>
+  {/foreach}
+</ul>
+<script language="javascript" type="text/javascript">
+$(document).ready(function() {
+ $('a.ajax1', '#menu').click(function(e) {
+   e.preventDefault();
+   $('ul li a.parent', '#menu').removeClass('highlight');
+   $(this).addClass('highlight');
+   var tm1 = $(this).attr('href');
+   $('#context').load(tm1).hide().fadeIn(100);
+   return false;
+ });
+
+ $('ul li a.ajax', '#menu').click(function(e) {
+  e.preventDefault();
+  $('ul li a.parent', '#menu').removeClass('highlight');
+  $(this).addClass('highlight');
+  var tm2 = $(this).closest('a').attr('href');
+  var mid = parseInt(tm2.substr(tm2.indexOf('mid=')+4));
+
+  $('#context').load(tm2, function() {
+    $('#nav ul li:first','#left').addClass('active');
+  });
+  return false;
+ });
+
+ $('ul.menu li div a.sajax', '#menu').click(function(e) {
+  e.preventDefault();
+  var tm3 = $(this);
+  var t1 = $(this).attr('href');
+  $.get(t1, function(data) {
+    $('#context').html(data);
+    $('#nav ul li', '#left').removeClass('active');
+    var m = $(tm3).parent('li').attr('title');
+    var n = $('#nav ul li', '#left').find("a:contains("+m+")");
+    $(n).parent().addClass('active');
+    $('ul li a.parent', '#menu').removeClass('highlight');
+    $(tm3).closest('div').parent('li').find('a.parent').addClass('highlight');
+  });
+  return false;
+ });
+
+ $('ul li a:first', '#menu').addClass('highlight');
+
+});
+</script>
+{/if} 

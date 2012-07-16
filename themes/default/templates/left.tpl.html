@@ -1,0 +1,30 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+{if isset($left) && is_array($left) && count($left)>0}
+{if $left.nav}
+<div id="nav">
+  <ul>
+    {foreach $left.nav as $l}
+    <li><a href="{$url}?js_get_content=1&amp;cid={$l[0]}" title="{$l[2]|escape:'html'}" class="ajax">{$l[1]}</a></li>
+    {/foreach}
+  </ul>
+  <script language="javascript" type="text/javascript">
+$(document).ready(function() {
+  $("#nav ul li a.ajax").address(function() {  
+   return $(this).attr('href').replace(/^#/, '');  
+  });
+  $('#nav ul li a.ajax', '#left').click(function(e) { // use '#left' instead of 'document'
+   e.preventDefault();
+   $('#nav ul li', '#left').removeClass('active');
+   $(this).closest('li').addClass('active');
+   if(! $('#contents').length) alert('should never happen!');
+   $('#contents').load($(e.target).attr('href'));
+   return false;
+  });
+  //first time:
+  $('#nav ul li:first', '#left').addClass('active');
+});
+</script>
+
+</div>
+{/if} 
+{/if}

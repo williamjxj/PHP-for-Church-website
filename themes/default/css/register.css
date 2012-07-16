@@ -1,0 +1,28 @@
+#div_4a_result, #div_4b_result {
+	width: 290px;
+	margin: 0 auto;
+}
+#div_4a_result span, #div_4b_result span, .remit2 span {
+	background: url(../images/icon-validation-alert.jpg) no-repeat;
+	background-position: 0 0;
+	padding-left: 20px;
+}
+#div1 {
+	position: absolute;
+	width: 93px;
+	margin: -103px 0 0 122px;
+}
+.noUser {
+	border: 1px dotted #6d98ac;
+	background-color: #ecf9ff;
+	font-size: 13px;
+	color: #686868;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+}
+.noUser a {
+	color: #1583e2;
+	text-decoration: underline;
+	font-weight: bold;
+}

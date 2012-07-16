@@ -1,0 +1,186 @@
+.cf {
+	overflow: hidden;
+}
+.hidden {
+	display: none;
+}
+.left {
+	float: left;
+}
+.text_center {
+	text-align: center;
+}
+.dot.selected {
+	width: 11px !important;
+}
+#signup_n_login_container {
+	background-image: -moz-linear-gradient(#F5F5F3, #E4E4E2);
+	background-color:#E4E4E2;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 254px;
+	z-index: 100;
+}
+#signup_n_login_container ul.tabs {
+	margin: 13px auto 0;
+	width: 225px;
+}
+#signup_n_login_container ul.tabs li {
+	float: left;
+	list-style: none outside none;
+}
+#signup_n_login_container ul.tabs li.signup_tab a {
+	border-bottom-left-radius: 3px;
+	border-right: medium none;
+	border-top-left-radius: 3px;
+}
+#signup_n_login_container ul.tabs li.login_tab a {
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+#signup_n_login_container ul.tabs li a {
+	background-image: -moz-linear-gradient(#F5F5F3, #E4E4E2);
+	border: 1px solid #CCCCCC;
+	color: #69778A;
+	display: block;
+	font-weight: bold;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	width: 110px;
+}
+#signup_n_login_container ul.tabs li a.selected {
+	background-image: -moz-linear-gradient(#E4E4E2, #F5F5F3);
+	box-shadow: 1px 1px 5px #CCCCCC inset;
+	color: #658DC2;
+}
+#signup_n_login_container .forms_container {
+	color: #666666;
+	font-size: 13px;
+	padding: 10px 15px;
+}
+/*
+#signup_n_login_container .forms_container .form_container {
+	min-height: 100px;
+}*/
+#signup_n_login_container .forms_container .msg_box {
+	color: #D97877;
+	margin: 5px 0;
+	text-align: center;
+}
+#signup_n_login_container .forms_container p {
+	margin: 0 0 5px;
+}
+#signup_n_login_container .forms_container form {
+	margin-top: 10px;
+}
+#signup_n_login_container .forms_container .input {
+	margin: 0 0 -1px;
+}
+#signup_n_login_container .forms_container .input.first input {
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+#signup_n_login_container .forms_container .input.last input {
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+#signup_n_login_container .forms_container .input .msg {
+	background-color: #E19F9F;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	color: #FFFFFF;
+	display: none;
+	font-size: 12px;
+	margin: -3px 0 0;
+	padding: 5px 9px 3px;
+}
+#signup_n_login_container .forms_container .input .msg.error {
+	display: block;
+}
+#signup_n_login_container .forms_container input[type="text"], #signup_n_login_container .forms_container input[type="password"] {
+	border: 1px solid #CCCCCC;
+	border-radius: 0 0 0 0;
+	color: #555555;
+	font-size: 13px;
+	padding: 6px 7px;
+	width: 207px;
+}
+#signup_n_login_container .forms_container input[type="text"]:-moz-placeholder, #signup_n_login_container .forms_container input[type="password"]:-moz-placeholder {
+ color: #999999;
+}
+#signup_n_login_container .forms_container input.error[type="text"]:-moz-placeholder, #signup_n_login_container .forms_container input.error[type="password"]:-moz-placeholder {
+ color: #FFFFFF;
+}
+#signup_n_login_container .forms_container input.placeholder[type="text"], #signup_n_login_container .forms_container input.placeholder[type="password"] {
+	color: #999999;
+}
+#signup_n_login_container .forms_container input.placeholder.error[type="text"], #signup_n_login_container .forms_container input.placeholder.error[type="password"] {
+	color: #FFFFFF;
+}
+#signup_n_login_container .forms_container input[type="text"]:focus, #signup_n_login_container .forms_container input[type="password"]:focus {
+	border: 1px solid #A1C4DF;
+}
+#signup_n_login_container .forms_container input.error[type="text"], #signup_n_login_container .forms_container input.error[type="password"] {
+	background-color: #D97877;
+	border: 1px solid #E19F9F;
+	color: #FFFFFF;
+}
+#signup_n_login_container .forms_container .remember_me {
+	margin: 4px 5px 6px 1px;
+}
+#signup_n_login_container .forms_container .remember_me .checkbox_field {
+	display: inline-block;
+}
+#signup_n_login_container .forms_container .remember_me span {
+	display: inline-block;
+}
+#signup_n_login_container .forms_container .submit_btn:hover {
+	background-position: 0 -231px;
+}
+#signup_n_login_container .forms_container .submit_btn:active {
+	background-position: 0 -263px;
+}
+#signup_n_login_container .forms_container #login_form_container p {
+	text-align: right;
+}
+#signup_n_login_container .forms_container #login_form_container p a {
+	color: #666666;
+	font-size: 13px;
+	text-decoration: none;
+}
+#signup_n_login_container .forms_container #login_form_container p a:hover {
+	text-decoration: underline;
+}
+#signup_n_login_container .forms_container #signup_form_container p.message {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+#signup_n_login_container .separator {
+	background: url(../images/sprite.png) no-repeat scroll 0 -197px transparent;
+	height: 2px;
+	margin: 0 auto;
+	width: 224px;
+}
+#signup_n_login_container .facebook_signup {
+	margin-top: 10px;
+}
+#signup_n_login_container .facebook_signup span.text {
+	display: block;
+	float: left;
+	line-height: 21px;
+}
+#signup_n_login_container .facebook_signup .facebook_button {
+	float: right;
+}
+table.ls_right {
+	margin-top: 20px;
+	margin-right:100px;
+	float:right;
+	color: yellow;
+}

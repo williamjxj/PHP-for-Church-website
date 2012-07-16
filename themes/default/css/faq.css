@@ -1,0 +1,2801 @@
+ul {
+  list-style: none outside none;
+  padding-left:0px;
+}
+caption, th {
+    text-align: left;
+}
+a {
+    outline: medium none;
+}
+.chrome body {
+    text-rendering: inherit;  
+}
+.content {
+    margin: 0 auto;
+}
+#main {
+    background: url("../../../resources/ontc/main-gradient.png") repeat-x scroll 0 0 transparent;
+}
+p {
+    font-size: 13px;
+    line-height: 20px;
+}
+a {
+    color: #218AC7;
+    font-size: 13px;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+label {
+    clear: both;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+.clear {
+    clear: both;
+}
+.blur {
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+ol {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.right {
+    float: right;
+}
+.left-side, .left {
+    float: left;
+}
+.hide {
+    display: none;
+}
+#top-bar {
+    background: url("../resources/ontc/top-bar-background.png") repeat-x scroll 0 0 #07436E;
+    border-bottom: 1px solid #00253D;
+    height: 58px;
+}
+#logo1 {
+    background: url("../resources/ontc/logo.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 30px;
+    margin-top: 15px;
+    width: 115px;
+}
+#logo1:hover {
+    background-position: 0 -30px;
+}
+#nav {
+    margin-left: 152px;
+    padding-top: 15px;
+}
+#nav li {
+    float: left;
+    padding-right: 6px;
+}
+#nav li.last {
+    float: right;
+}
+#nav li span {
+    background: url("../resources/ontc/nav.png") no-repeat scroll -506px 0 transparent;
+    display: block;
+    height: 40px;
+    margin: -6px 0 0 -20px;
+    position: absolute;
+    width: 2px;
+}
+#nav a {
+    background: url("../resources/ontc/nav.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 28px;
+    overflow: hidden;
+}
+a#tour-nav {
+    background-position: 0 0;
+    width: 104px;
+}
+a#plans-nav {
+    background-position: -104px 0;
+    width: 141px;
+}
+a#support-nav {
+    background-position: -245px 0;
+    width: 128px;
+}
+a#blog-nav {
+    background-position: -373px 0;
+    width: 89px;
+}
+a#login-nav {
+    background-position: -462px 0;
+    width: 44px;
+}
+a#tour-nav:hover {
+    background-position: 0 -28px;
+}
+a#plans-nav:hover {
+    background-position: -104px -28px;
+}
+a#support-nav:hover {
+    background-position: -245px -28px;
+}
+a#blog-nav:hover {
+    background-position: -373px -28px;
+}
+a#login-nav:hover {
+    background-position: -462px -28px;
+}
+a#tour-nav.active {
+    background-position: 0 -56px;
+}
+a#plans-nav.active {
+    background-position: -104px -56px;
+}
+a#support-nav.active {
+    background-position: -245px -56px;
+}
+a#blog-nav.active {
+    background-position: -373px -56px;
+}
+#search {
+    margin-top: -1px;
+}
+.msie8 #search {
+    margin-top: 0;
+}
+#search input#search-field {
+    background: url("../resources/ontc/search.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #083A5B;
+    float: right;
+    font-size: 0.813em;
+    height: 31px;
+    outline: medium none;
+    padding-left: 20px;
+    width: 140px;
+}
+.msie #search input#search-field {
+    padding-top: 7px;
+}
+#search input#go {
+    background: url("../resources/ontc/search.png") no-repeat scroll -160px 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    float: right;
+    height: 31px;
+    outline: medium none;
+    width: 38px;
+}
+#search input#search-field.focus {
+    background-position: -197px 0;
+}
+#info {
+    padding: 23px 0 25px;
+}
+#info h2 {
+    color: #4C565C;
+    font-size: 11px;
+    margin-bottom: 22px;
+}
+#info .box-content h3 {
+    color: #205F8A;
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+#info p, #home #info-two a {
+    font-size: 12px;
+}
+#info .left {
+    width: 586px;
+}
+#info .left-side-large {
+    width: 650px;
+}
+#info .right-side {
+    margin-left: 589px;
+    margin-top: 7px;
+}
+#info .right-side-small {
+    margin-left: 670px;
+}
+.teaser {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+#why td.photo {
+    background: url("../resources/ontc/why-photo-back.png") no-repeat scroll 0 0 transparent;
+    height: 120px;
+    width: 110px;
+}
+label.error {
+    clear: both;
+    color: #D70000;
+    font-size: 11px;
+    font-weight: normal;
+    width: auto;
+}
+input.error, textarea.error {
+    border: 2px solid #D70000;
+}
+.box.top, .box.bottom {
+    background: url("../resources/ontc/gray-box.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 9px;
+    overflow: hidden;
+    width: 372px;
+}
+.box.bottom {
+    background-position: 0 -9px;
+}
+.box.middle {
+    background: url("../resources/ontc/gray-box.png") repeat-y scroll -372px 0 transparent;
+    float: left;
+}
+.box .box-content {
+    clear: both;
+    display: block;
+    float: left;
+}
+.box .box-content h3 {
+    margin-bottom: 5px;
+}
+.box .box-content a:hover {
+    text-decoration: none;
+}
+.box .box-content a:hover span {
+    text-decoration: underline;
+}
+#container {
+    min-height: 100%;
+    position: relative;
+}
+body#video object {
+    float: left;
+    padding: 25px;
+}
+body#video object.second {
+    padding: 25px 25px 25px 5px;
+}
+#inside #intro {
+    background: url("../../../resources/ontc/inside-intro-background.png") repeat-x scroll 0 0 #1995C5;
+    border-bottom: 1px solid #85929A;
+    color: #FFFFFF;
+    height: 105px;
+    text-shadow: 0 1px 2px #052C3D;
+    width: 100%;
+}
+#inside #glow {
+    background: url("../../../resources/ontc/inside-intro-glow.jpg") no-repeat scroll center top transparent;
+    height: 105px;
+    margin: 0 auto;
+}
+#inside a#plans {
+    background: url("../../../resources/ontc/get-started-now.png") no-repeat scroll 0 0 transparent;
+    display: inline;
+    float: right;
+    height: 48px;
+    margin: 30px -9px 0 0;
+    padding: 5px;
+    width: 175px;
+}
+#inside h1 {
+    color: #043B5F;
+    font-size: 25px;
+    margin-top: 24px;
+}
+#inside h3 {
+    font-size: 15px;
+    line-height: 23px;
+    margin: 7px 0 26px;
+}
+#inside #footer {
+    margin-top: 25px;
+}
+#inside #footer.blog-footer {
+    margin-top: 10px;
+}
+#intro h2, h1.img-home, h1.img-pricing {
+    text-indent: -9999px;
+    visibility: visible;
+}
+#intro h2 {
+    float: left;
+    font-size: 34px;
+    margin-top: 36px;
+}
+#inside .boxwrap {
+    clear: both;
+    float: right;
+    margin-top: 15px;
+    width: 280px;
+}
+#inside .box {
+    width: 280px;
+}
+#inside .box.top, #inside .box.bottom {
+    background: url("../../../resources/ontc/inside-box.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 9px;
+    overflow: hidden;
+    width: 280px;
+}
+#inside .box.bottom {
+    background-position: 0 -9px;
+}
+#inside .box.middle {
+    background: url("../../../resources/ontc/inside-box.png") repeat-y scroll -280px 0 transparent;
+    float: left;
+}
+#inside .box .box-content {
+    clear: both;
+    display: block;
+    float: left;
+    padding: 6px 14px 5px 22px;
+}
+.msie7 #inside .box .box-content p, .msie6 #inside .box .box-content p {
+    width: 250px;
+}
+#inside .box .box-content h3 {
+    margin-bottom: 5px;
+}
+#inside .box ul.column {
+    clear: none;
+    float: left;
+    margin: 6px 0 16px;
+    width: 168px;
+}
+#inside .box ul {
+    margin: 3px 0 0;
+}
+#inside .box h4 {
+    color: #205F8A;
+    font-size: 20px;
+    margin-bottom: 5px;
+    width: 200px;
+}
+#inside .box p, #inside .box a {
+    font-size: 12px;
+}
+#inside .box a {
+    font-size: 13px;
+    line-height: 20px;
+}
+#inside .box a:hover {
+    text-decoration: none;
+}
+#inside .box a:hover span {
+    text-decoration: underline;
+}
+#inside .box p {
+    clear: both;
+    float: left;
+    margin: 5px 5px 5px 0;
+}
+#home #intro {
+    background: url("../resources/ontc/home-intro-background.png") repeat-x scroll 0 0 #1995C5;
+    border-bottom: 1px solid #85929A;
+    color: #FFFFFF;
+    height: 432px;
+    width: 100%;
+}
+#home #glow {
+    background: url("../resources/ontc/home-intro-glow.jpg") no-repeat scroll center top transparent;
+    height: 432px;
+    margin: 0 auto;
+}
+#home #intro h1 {
+    font-size: 40px;
+    height: 45px;
+    padding: 39px 0 33px;
+    text-align: center;
+    text-shadow: 0 1px 2px #052C3D;
+}
+#home #intro .tab-content {
+    display: none;
+    position: absolute;
+    width: 962px;
+}
+#home #intro .image, #home #intro .description {
+    float: left;
+    padding: 0 20px;
+    width: 441px;
+}
+#home #intro .image {
+    text-align: right;
+}
+#home #intro #tab1 .image {
+    margin-top: -4px;
+}
+#home #intro #tab2 .image {
+    left: -10px;
+    position: relative;
+    top: -4px;
+}
+#home #intro #tab3 .image {
+    left: 5px;
+    position: relative;
+    top: -5px;
+}
+#home #intro #tab4 .image {
+    left: -5px;
+    position: relative;
+    top: -5px;
+}
+#home #intro .description ul {
+    line-height: 26px;
+    width: 360px;
+}
+#home #intro .description ul li {
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 14px;
+    text-shadow: 0 1px 1px #052C3D;
+}
+#home #intro .description ul li span {
+    font-family: Verdana,Arial,Sans-Serif;
+    font-size: 16px;
+    padding-right: 6px;
+}
+#home #intro .description strong {
+    color: #FFFFB8;
+    font-size: 14px;
+    font-weight: bold;
+}
+#home #intro .plans {
+    margin: 28px 0 0 83px;
+}
+#home #intro .plans a, #home #intro .plans span {
+    background: url("../resources/ontc/see-plans-and-pricing.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 45px;
+}
+#home #intro .plans a {
+    background-position: -83px 0;
+    width: 230px;
+}
+#home #intro .plans a:hover {
+    background-position: -83px -45px;
+}
+#home #intro .plans span {
+    margin-left: -83px;
+    position: absolute;
+    width: 83px;
+}
+#home #intro .plans small {
+    display: block;
+    font-size: 11px;
+    padding-top: 2px;
+    text-align: center;
+    text-shadow: 0 1px 1px #052C3D;
+    width: 212px;
+}
+#home #tabs {
+    height: 54px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 413px;
+    width: 846px;
+}
+.msie7 #home #tabs {
+    left: auto;
+    margin-left: 58px;
+    right: auto;
+}
+#home #tabs li {
+    float: left;
+}
+#home #tabs li a {
+    background: url("../resources/ontc/home-tabs.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 54px;
+}
+#home #tabs li a.point1 {
+    background-position: 0 -54px;
+    width: 232px;
+}
+#home #tabs li a.point2 {
+    background-position: -232px -54px;
+    width: 200px;
+}
+#home #tabs li a.point3 {
+    background-position: -432px -54px;
+    width: 207px;
+}
+#home #tabs li a.point4 {
+    background-position: -639px -54px;
+    width: 207px;
+}
+#home #tabs li.selected a.point1, #home #tabs li a.point1:hover {
+    background-position: 0 0;
+}
+#home #tabs li.selected a.point2, #home #tabs li a.point2:hover {
+    background-position: -232px 0;
+}
+#home #tabs li.selected a.point3, #home #tabs li a.point3:hover {
+    background-position: -432px 0;
+}
+#home #tabs li.selected a.point4, #home #tabs li a.point4:hover {
+    background-position: -639px 0;
+}
+#home #main h2 {
+    color: #205F8A;
+    font-size: 22px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+#home #features {
+    padding: 28px 0 6px;
+}
+#home #different {
+    float: left;
+    margin-left: 1px;
+    width: 585px;
+}
+#home #different h2, #home #different p.intro {
+    margin-right: 60px;
+}
+#home #different p.intro {
+    padding-bottom: 13px;
+}
+#home .arrow {
+    background: url("../resources/surreyonefamily/home-sprite.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 11px;
+    left: 4px;
+    overflow: hidden;
+    position: relative;
+    top: 2px;
+    width: 10px;
+}
+#home .link {
+    background: url("../resources/ontc/home-different.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 76px;
+    margin: 6px 20px 0 0;
+    position: relative;
+    width: 242px;
+}
+#home .link a {
+    background: none repeat scroll 0 0 transparent;
+    display: block;
+    height: 76px;
+    position: relative;
+    width: 242px;
+    z-index: 2;
+}
+#home .link div {
+    background: url("../resources/ontc/home-different.png") no-repeat scroll 0 -76px transparent;
+    display: none;
+    float: left;
+    height: 76px;
+    margin-top: -90px;
+    position: relative;
+    width: 242px;
+    z-index: 1;
+}
+.msie7 #home .link div {
+    margin-top: -76px;
+}
+#home .link .image {
+    background: url("../resources/ontc/home-different.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 76px;
+    margin: 5px 8px 9px;
+    position: relative;
+    top: 4px;
+    width: 76px;
+}
+#home .link.tour .image {
+    background-position: -242px 0;
+}
+#home .link.video .image {
+    background-position: -318px 0;
+    width: 64px;
+}
+#home .link .text {
+    color: #616E79;
+    display: block;
+    font-size: 11px;
+    line-height: 15px;
+    padding: 13px 8px 0 0;
+}
+#home .link .text strong {
+    color: #218AC7;
+    display: block;
+    font-family: Verdana,Arial,Sans-Serif;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+#home .link a:hover {
+    text-decoration: none;
+}
+#home #props {
+    margin: 11px 0 18px 588px;
+}
+#home #props blockquote {
+    float: left;
+    padding-bottom: 28px;
+}
+#home #props blockquote.quote2 {
+    padding-bottom: 30px;
+}
+#home #props blockquote div {
+    background: url("../resources/surreyonefamily/home-sprite.png") no-repeat scroll -10px 0 transparent;
+    clear: right;
+    float: left;
+    height: 60px;
+    margin-right: 14px;
+    width: 29px;
+}
+#home #props blockquote p {
+    font-family: Georgia,"Times New Roman",Times,Serif;
+    font-style: italic;
+    line-height: 18px;
+    margin-top: 5px;
+}
+#home #props blockquote p cite {
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    padding-left: 5px;
+}
+#home #props p.plan-info, #home #props p.plan-info a {
+    font-family: Arial,Sans-Serif;
+    font-size: 16px;
+}
+#home #props p.plan-info {
+    color: #205F8A;
+}
+#home #props p.plan-info a {
+    text-decoration: underline;
+}
+#home .divider {
+    background: url("../resources/ontc/home-divider.png") no-repeat scroll center top transparent;
+    height: 9px;
+    margin: 19px 0 2px;
+}
+#home #users ul.column {
+    clear: none;
+    float: left;
+    margin: 6px 0 4px;
+    width: 168px;
+}
+#home #users ul.column li {
+    color: #205F8A;
+    font-size: 12px;
+    line-height: 22px;
+}
+#home #users ul.column li a {
+    font-size: 12px;
+}
+#home #users ul.column li a:hover {
+    text-decoration: underline;
+}
+#home #blog-roll .post {
+    margin: 0 60px 18px 0;
+}
+#home #blog-roll h3 {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+#home #blog-roll p {
+    margin-bottom: 2px;
+}
+#home #blog-roll small {
+    color: #7F8A93;
+    font-size: 12px;
+}
+#home #blog-roll small a {
+    font-size: 12px;
+}
+#home #blog-roll small span {
+    margin: 0 4px;
+    position: relative;
+    top: -1px;
+}
+#home #tour-or-signup {
+    margin-top: 14px;
+}
+#sections {
+    margin: 16px 0 0;
+}
+#sections ul {
+    margin-right: 10px;
+    position: relative;
+}
+#sections li {
+    float: right;
+}
+#sections li a {
+    -moz-user-select: none;
+    color: #86929C;
+    float: left;
+    font-size: 13px;
+    padding-right: 25px;
+    text-decoration: none;
+}
+#sections li a span {
+    display: block;
+    float: left;
+    height: 37px;
+    line-height: 37px;
+    padding-right: 25px;
+}
+#sections li a strong {
+    display: inline-block;
+    font-weight: normal;
+    padding-top: 13px;
+}
+#sections li a:hover strong {
+    color: #218AC7;
+}
+#sections li a.current {
+    background: url("../../../resources/ontc/tour-menu.png") no-repeat scroll right 0 transparent;
+    color: #2A719B;
+}
+#sections li a.current span {
+    background: url("../../../resources/ontc/tour-menu.png") no-repeat scroll left 0 transparent;
+}
+#sections li a.current:hover strong {
+    color: inherit;
+}
+#sections .divider {
+    background: url("../../../resources/ontc/tour-menu.png") repeat-x scroll 0 -37px transparent;
+    font-size: 2px;
+    height: 3px;
+    position: relative;
+    top: 37px;
+    width: 100%;
+}
+#app, #why, #features, #faq {
+    padding-top: 5px;
+}
+h1 {
+    font-size: 26px;
+    margin-bottom: 22px;
+}
+h3 {
+    color: #29475A;
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+p {
+    line-height: 23px;
+    margin-bottom: 12px;
+}
+p.last {
+    margin-bottom: 18px;
+}
+#steps div {
+    float: left;
+    height: 0;
+    width: 305px;
+}
+#steps ul {
+    background: url("../resources/ontc/tour-steps-background.png") no-repeat scroll 0 0 transparent;
+    height: 169px;
+    margin-left: 336px;
+    overflow: hidden;
+    width: 632px;
+}
+#steps li {
+    float: left;
+    margin: 18px 10px 0 25px;
+    position: relative;
+}
+#steps li p {
+    color: #888C8F;
+    font-family: Helvetica,Arial,Sans-serif;
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+    top: 13px;
+    width: 114px;
+}
+.msie7 #steps li p {
+    left: 0;
+    position: absolute;
+    top: 107px;
+}
+#steps span {
+    background: url("../resources/ontc/tour-steps-background.png") no-repeat scroll -632px 0 transparent;
+    display: block;
+    height: 39px;
+    margin: 30px 0 0 124px;
+    position: absolute;
+    width: 24px;
+}
+.msie7 #steps span {
+    margin-left: 4px;
+}
+#steps ul .thumb {
+    background: url("../resources/ontc/tour-steps.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 94px;
+    position: relative;
+    width: 121px;
+}
+#steps ul .thumb div {
+    background: url("../resources/ontc/tour-steps.png") no-repeat scroll 0 0 transparent;
+    display: none;
+    float: left;
+    height: 94px;
+    margin-top: -94px;
+    position: relative;
+    width: 121px;
+    z-index: 1;
+}
+#steps ul .thumb a {
+    background: none repeat scroll 0 0 transparent;
+    display: block;
+    height: 94px;
+    position: relative;
+    width: 121px;
+    z-index: 2;
+}
+#steps ul .thumb.step2 {
+    background-position: -121px 0;
+}
+#steps ul .thumb.step3 {
+    background-position: -242px 0;
+}
+#steps ul .thumb.step4 {
+    background-position: -363px 0;
+}
+#steps ul .thumb.step1 div {
+    background-position: 0 -94px;
+}
+#steps ul .thumb.step2 div {
+    background-position: -121px -94px;
+}
+#steps ul .thumb.step3 div {
+    background-position: -242px -94px;
+}
+#steps ul .thumb.step4 div {
+    background-position: -363px -94px;
+}
+#finding {
+    clear: both;
+    padding: 48px 0 40px;
+}
+#finding .wrapper {
+    width: 50%;
+}
+#finding .wrapper div.text {
+    margin: 0 15px 0 178px;
+}
+#finding .wrapper div.text.first {
+    margin-right: 20px;
+}
+#finding #included-website {
+    float: left;
+}
+#finding #your-website {
+    margin-left: 50%;
+}
+#finding .thumb a {
+    background: none repeat scroll 0 0 transparent;
+    display: block;
+    height: 126px;
+    position: relative;
+    width: 165px;
+    z-index: 2;
+}
+#finding .thumb {
+    background: url("../resources/ontc/tour-thumbnails.jpg") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 126px;
+    position: relative;
+    top: -2px;
+    width: 165px;
+}
+#finding .thumb div {
+    background: url("../resources/ontc/tour-thumbnails.jpg") no-repeat scroll 0 0 transparent;
+    display: none;
+    float: left;
+    height: 126px;
+    margin-top: -126px;
+    position: relative;
+    width: 165px;
+    z-index: 1;
+}
+#finding .thumb.your-site {
+    background-position: -165px 0;
+}
+#finding .thumb.incl-site div {
+    background-position: 0 -126px;
+}
+#finding .thumb.your-site div {
+    background-position: -165px -126px;
+}
+#schedule {
+    border-top: 1px solid #C5C8C9;
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
+h1 {
+    color: #29475A;
+}
+h2 {
+    color: #29475A;
+    font-size: 22px;
+    margin: 0 0 15px;
+}
+#schedule .wrapper {
+    float: left;
+    width: 375px;
+}
+#schedule img {
+    display: block;
+    margin-left: 414px;
+}
+#clients h2 {
+    margin-bottom: 15px;
+}
+#clients img {
+    float: left;
+    padding-bottom: 15px;
+    width: 548px;
+}
+#clients .wrapper {
+    margin-left: 548px;
+    padding-left: 40px;
+}
+.more2 {
+    width: 244px;
+}
+.more2.top, .more2.bottom {
+    background: url("../resources/ontc/tour-boxes.png") no-repeat scroll -1960px 0 transparent;
+    float: left;
+    height: 9px;
+    overflow: hidden;
+    width: 244px;
+}
+.more2.bottom {
+    background-position: -1960px -9px;
+}
+.more2.middle {
+    background: url("../resources/ontc/tour-boxes.png") repeat-y scroll -2204px 0 transparent;
+    float: left;
+}
+.more2 .more-content {
+    clear: both;
+    display: block;
+    float: left;
+    font-family: Helvetica,Arial,Sans-Serif;
+    padding: 2px 14px 10px 21px;
+}
+.more3 {
+    width: 348px;
+}
+.more3.top, .more3.bottom {
+    background: url("../resources/ontc/tour-boxes.png") no-repeat scroll -1264px 0 transparent;
+    float: left;
+    height: 9px;
+    overflow: hidden;
+    width: 348px;
+}
+.more3.bottom {
+    background-position: -1264px -9px;
+}
+.more3.middle {
+    background: url("../resources/ontc/tour-boxes.png") repeat-y scroll -1612px 0 transparent;
+    float: left;
+}
+.more3 .more-content {
+    clear: both;
+    display: block;
+    float: left;
+    font-family: Helvetica,Arial,Sans-Serif;
+    padding: 2px 14px 5px 21px;
+}
+.more-content p {
+    margin: 0 0 4px;
+}
+.your-view .thumb a {
+    background: none repeat scroll 0 0 transparent;
+    display: block;
+    height: 70px;
+    position: relative;
+    width: 92px;
+    z-index: 2;
+}
+.your-view .thumb {
+    background: url("../resources/ontc/tour-thumbnails-small.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 70px;
+    position: relative;
+    width: 92px;
+}
+.your-view .thumb div {
+    background: url("../resources/ontc/tour-thumbnails-small.png") no-repeat scroll 0 0 transparent;
+    display: none;
+    float: left;
+    height: 70px;
+    margin-top: -70px;
+    position: relative;
+    width: 92px;
+    z-index: 1;
+}
+.your-view .thumb.appointment {
+    margin-right: 16px;
+}
+.your-view .thumb.month-view {
+    background-position: -92px 0;
+}
+.your-view .thumb.overview {
+    background-position: -184px 0;
+    margin-right: 16px;
+}
+.your-view .thumb.reports {
+    background-position: -276px 0;
+    margin-right: 16px;
+}
+.your-view .thumb.manage-staff {
+    background-position: -368px 0;
+}
+.your-view .thumb.appointment div {
+    background-position: 0 -70px;
+}
+.your-view .thumb.month-view div {
+    background-position: -92px -70px;
+}
+.your-view .thumb.overview div {
+    background-position: -184px -70px;
+    margin-right: 16px;
+}
+.your-view .thumb.reports div {
+    background-position: -276px -70px;
+    margin-right: 16px;
+}
+.your-view .thumb.manage-staff div {
+    background-position: -368px -70px;
+}
+#why .boxwrap {
+    margin-top: 30px;
+}
+#why .left-side ul {
+    margin: 30px 0 0 52px;
+}
+#why .left-side h4 {
+    color: #205F8A;
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+#why .left-side p {
+    color: #616E79;
+    font-size: 13px;
+    margin-bottom: 35px;
+}
+#why .bullets {
+    background: url("../resources/ontc/number-bullets.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 37px;
+    margin: -7px 0 0 -51px;
+    overflow: hidden;
+    position: absolute;
+    width: 36px;
+}
+#why .bullets.b2 {
+    background-position: -36px 0;
+}
+#why .bullets.b3 {
+    background-position: -72px 0;
+}
+#why .bullets.b4 {
+    background-position: -108px 0;
+}
+#why .bullets.b5 {
+    background-position: -144px 0;
+}
+#why ul li {
+    color: #205F8A;
+    font-size: 13px;
+    line-height: 22px;
+}
+#why td {
+    vertical-align: top;
+}
+#why td h3, #why td em {
+    color: #205F8A;
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 12px;
+    margin: 0;
+}
+#why td em {
+    color: #666666;
+}
+#features h4 {
+    font-size: 15px;
+    line-height: 23px;
+    padding: 7px 0 26px;
+    width: 650px;
+}
+#features h3 {
+    color: #205F8A;
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+#features h3 span {
+    font-size: 16px;
+}
+#features .group {
+    clear: both;
+}
+#features .icon {
+    background: url("../resources/ontc/feature-icons.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 32px;
+    margin-right: 12px;
+    overflow: hidden;
+    position: relative;
+    top: 7px;
+    width: 32px;
+}
+#features .icon.schedule {
+    background-position: -32px 0;
+}
+#features .icon.clients {
+    background-position: -64px 0;
+}
+#features .icon.reports {
+    background-position: -96px 0;
+}
+#features .icon.manage {
+    background-position: -128px 0;
+}
+#features .icon.promote {
+    background-position: -160px 0;
+}
+#features ul {
+    float: left;
+    font-size: 13px;
+    line-height: 26px;
+    margin-bottom: 30px;
+    width: 390px;
+}
+#features ul.left {
+    margin: 0 30px 30px 44px;
+}
+#features ul li {
+    margin: 1px 0;
+}
+#features ul li span {
+    float: left;
+    margin-top: -3px;
+}
+#features ul li p {
+    margin: 0 0 4px 12px;
+}
+#faq {
+    width: 800px;
+}
+#faq h1 {
+    margin-bottom: 20px;
+}
+#faq h4 {
+    color: #205F8A;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 19px;
+    padding: 20px 0 6px;
+}
+#faq ul {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border-bottom: 1px solid #B6BBBF;
+    border-top: 1px solid #B6BBBF;
+    color: #B6BBBF;
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding: 10px 15px;
+}
+#faq ul a {
+    color: #218AC7;
+    font-size: 13px;
+    line-height: 25px;
+}
+#faq div {
+    border-bottom: 1px solid #C7CCCF;
+    margin-bottom: 0;
+    padding: 0 17px 42px;
+}
+#faq div img {
+    border: 1px solid #C7CCCF;
+    margin-top: 7px;
+}
+#faq div.last {
+    border: medium none;
+    margin-bottom: 20px;
+}
+#faq div a.return-top {
+    display: block;
+    font-family: Helvetica,Arial,sans-serif;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+#faq div a.anchor {
+    position: relative;
+    top: -80px;
+}
+#faq ul .qmore {
+    color: #616E79;
+    margin-top: 10px;
+}
+#signup {
+    color: #616E79;
+    font-family: Verdana,Arial,Sans-Serif;
+    margin-left: 662px;
+    position: absolute;
+    text-shadow: none;
+    top: 119px;
+    width: 260px;
+    z-index: 15;
+}
+#signup fieldset {
+    margin-bottom: 21px;
+}
+#signup fieldset.password {
+    margin-bottom: 15px;
+}
+#signup fieldset.terms {
+    margin-bottom: 12px;
+}
+#signup label {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 18px;
+    margin-bottom: 4px;
+}
+.msie7 #pricing #signup label {
+    margin-bottom: 3px;
+}
+#signup label.error {
+    color: #E93030;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: normal;
+    margin-top: -55px;
+    position: absolute;
+    text-align: right;
+    width: 260px;
+}
+#signup .terms label {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    margin-left: 24px;
+}
+#signup p.url {
+    color: #9BA4AB;
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 8px 0;
+    position: absolute;
+    right: 8px;
+}
+#signup input[type="text"], #pricing #signup input[type="password"], #pricing #signup input[type="submit"] {
+    background: url("../resources/ontc/pricing-sprite.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #000000;
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 16px;
+}
+#signup input[type="text"], #pricing #signup input[type="password"] {
+    background-position: 0 -114px;
+    border: medium none;
+    height: 18px;
+    padding: 8px 7px;
+    width: 246px;
+}
+#signup input.error[type="text"], #signup input#signuppassword.error {
+    background-position: 0 -148px;
+}
+#signup input[type="checkbox"] {
+    float: left;
+    height: 20px;
+    opacity: 0;
+    width: 20px;
+}
+#signup input[type="submit"] {
+    background: url("../resources/ontc/pricing-sprite.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    height: 57px;
+    left: 0;
+    position: relative;
+    text-align: left;
+    top: 0;
+    width: 259px;
+}
+#signup input#submit:hover {
+    background-position: 0 -57px;
+}
+#signup input#username {
+    text-align: right;
+}
+.checker, .checker * {
+    margin: 0;
+    padding: 0;
+}
+.checker {
+    display: inline-block;
+    vertical-align: middle;
+}
+.checker input:focus {
+    outline: 0 none;
+}
+div.checker {
+    float: left;
+    height: 20px;
+    margin: -2px 0 0 -2px;
+    width: 20px;
+}
+div.checker input {
+    background: none repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 20px;
+    opacity: 0;
+    width: 20px;
+}
+div.checker span {
+    background: url("../resources/ontc/pricing-sprite.png") no-repeat scroll 0 -182px transparent;
+    display: inline-block;
+    height: 20px;
+    text-align: center;
+    width: 20px;
+}
+div.checker:active span, div.checker.active span {
+    background-position: -20px -182px;
+}
+div.checker.focus span, div.checker:hover span {
+    background-position: -40px -182px;
+}
+div.checker.focus:active span, div.checker:active:hover span, div.checker.active:hover span, div.checker.focus.active span {
+    background-position: -60px -182px;
+}
+div.checker span.checked {
+    background-position: -80px -182px;
+}
+div.checker:active span.checked, div.checker.active span.checked {
+    background-position: -100px -182px;
+}
+div.checker.focus span.checked, div.checker:hover span.checked {
+    background-position: -120px -182px;
+}
+div.checker.focus:active span.checked, div.checker:hover:active span.checked, div.checker.active:hover span.checked, div.checker.active.focus span.checked {
+    background-position: -140px -182px;
+}
+div.checker span.error {
+    background-position: -160px -182px;
+}
+#support h3 {
+    margin: 10px 0 13px;
+}
+#support h3 a {
+    color: #205F8A;
+    display: block;
+    font-size: 22px;
+    padding: 0;
+}
+#support h3 a:hover {
+    text-decoration: none;
+}
+#support ul.nav {
+    border-bottom: 1px solid #B6BBBF;
+    float: left;
+    margin: 10px 0 35px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+#support ul.nav li {
+    float: left;
+}
+#support ul.nav li a, #support ul.nav li span {
+    font-family: Helvetica,Arial,Sans-Serif;
+}
+#support ul.nav li a {
+    color: #205F8A;
+    font-size: 14px;
+}
+#support ul.nav li span {
+    color: #B6BBBF;
+    font-size: 15px;
+    padding: 0 8px;
+    position: relative;
+    top: 0;
+}
+#support ul.questions {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border-bottom: 1px solid #B6BBBF;
+    border-top: 1px solid #B6BBBF;
+    color: #B6BBBF;
+    margin-bottom: 40px;
+    padding: 10px 15px;
+}
+#support ul.questions a {
+    line-height: 25px;
+}
+#support ul.questions .more a {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 14px 0 4px 1px;
+}
+#support .icon {
+    background: url("../resources/ontc/support-icons.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 24px;
+    margin: -2px 10px 0 0;
+    overflow: hidden;
+    width: 24px;
+}
+#support .icon.schedule {
+    background-position: 0 0;
+}
+#support .icon.clients {
+    background-position: -24px 0;
+}
+#support .icon.staff {
+    background-position: -48px 0;
+}
+#support .icon.online {
+    background-position: -72px 0;
+}
+#support .icon.account {
+    background-position: -96px 0;
+}
+#support #index {
+    padding: 25px 0 0;
+    width: 670px;
+}
+#support #index .anchor {
+    margin-top: -38px;
+    position: absolute;
+}
+#support #submit {
+    clear: both;
+    float: right;
+    margin-top: 70px;
+    width: 230px;
+}
+#support #submit h4 {
+    color: #205F8A;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+#support #topic {
+    padding: 4px 0 0;
+    width: 678px;
+}
+#support #topic h1 {
+    margin-bottom: 12px;
+}
+#support #topic h1 a {
+    color: #205F8A;
+    font-size: 25px;
+    margin-top: 24px;
+}
+#support #topic h1 a:hover {
+    text-decoration: none;
+}
+#support #topic h4 {
+    color: #205F8A;
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 19px;
+    padding: 20px 0 4px;
+}
+#support #topic a.return-top, #support #topic a.back {
+    font-family: Helvetica,Arial,Sans-Serif;
+    text-decoration: underline;
+}
+#support #topic a.back {
+    float: right;
+    margin-top: -30px;
+}
+#support #topic p {
+    padding: 6px 0;
+}
+#support #topic ul {
+    margin-bottom: 20px;
+}
+#support #topic div {
+    border-bottom: 1px solid #C7CCCF;
+    margin-bottom: 0;
+    padding: 0 17px 42px;
+}
+#support #topic div.last {
+    border: medium none;
+    margin-bottom: 20px;
+}
+#support #topic div a.return-top {
+    display: block;
+    margin-top: 5px;
+}
+#support #topic div a.anchor {
+    margin-top: -80px;
+    position: absolute;
+}
+#support #topic img {
+    border: 1px solid #C7CCCF;
+    margin: 12px 0;
+}
+#support #topic small {
+    font-size: 11px;
+    left: 8px;
+    padding-bottom: 30px;
+    position: relative;
+    top: -5px;
+}
+#support #topic small span {
+    margin-right: 2px;
+}
+#support #topic table {
+    border: 1px solid #C7CCCF;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin: 6px 0;
+}
+#support #topic table th {
+    background: none repeat scroll 0 0 #D7EEFC;
+    border: 1px solid #C7CCCF;
+    padding: 5px;
+    text-align: center;
+}
+#support #topic table th.label {
+    width: 70px;
+}
+#support #topic table td {
+    border: 1px solid #C7CCCF;
+    padding: 5px 8px;
+}
+#support #topic table td.check {
+    background: url("../resources/ontc/checkmark.gif") no-repeat scroll center center transparent;
+    font-size: 14px;
+    height: 14px;
+    width: 14px;
+}
+#support #topic table td.check span {
+    color: #54A71C;
+    display: block;
+    font-size: 13px;
+    margin: -2px 0 0 12px;
+    text-align: center;
+    width: 100%;
+}
+.msie7 #support #topic table td.check span {
+    margin-left: 37px;
+}
+#support #topic #notifications {
+    width: 600px;
+}
+#support #topic table .cost {
+    width: 100px;
+}
+#support #topic table .explanation {
+    width: 360px;
+}
+#support #topic #cost-types {
+    margin-bottom: 14px;
+}
+#support h5 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+#support input, #support textarea {
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 12px;
+    padding: 4px 5px;
+}
+#support input#generate {
+    padding: 1px 3px;
+}
+#support textarea#facebook-code {
+    font-family: monospace;
+    height: 100px;
+    overflow: auto;
+    width: 500px;
+}
+#support #topic #generate-code {
+    background: none repeat scroll 0 0 #FFFFDB;
+    border: medium none;
+    margin-top: 8px;
+    padding: 10px 15px 12px;
+}
+#support #topic #generate-code p {
+    padding: 0 0 6px;
+}
+#support #topic #your-code {
+    border: medium none;
+    padding: 0;
+}
+#support #topic #your-code p {
+    padding: 12px 0 2px;
+}
+#contact.content {
+    padding-bottom: 143px;
+}
+#contact #contact-form {
+    width: 660px;
+}
+#contact h3 {
+    font-size: 17px;
+    margin-top: 20px;
+}
+#contact h2, #contact h3 {
+    border-bottom: 1px solid #BEC8D2;
+    padding-bottom: 10px;
+}
+#contact h4 {
+    color: #29475A;
+    float: left;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+#contact input[type="text"], #contact input[type="password"], #contact textarea {
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 13px;
+    padding: 5px;
+    width: 215px;
+}
+#contact textarea {
+    overflow-y: auto;
+    width: 400px;
+}
+#contact label {
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    padding-right: 5px;
+}
+#contact label.sublabel {
+    position: relative;
+    top: -2px;
+}
+#contact label.msglabel {
+    display: block;
+    margin-bottom: 5px;
+}
+#contact input {
+    vertical-align: middle;
+}
+#contact .success {
+    font-family: Helvetica,Arial,Sans-Serif;
+}
+#contact a.send {
+    background: url("../resources/ontc/send-button.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 38px;
+    margin-bottom: 15px;
+    width: 105px;
+}
+#contact a.send:active {
+    background-position: -137px 0;
+}
+#contact form p {
+    font-size: 12px;
+    margin: 8px 0;
+    width: 440px;
+}
+#contact form {
+    margin-bottom: 20px;
+}
+#contact table tr td {
+    padding-bottom: 10px;
+}
+#contact textarea.error {
+    padding: 4px;
+}
+#contact label.error {
+    clear: none;
+    margin-left: 5px;
+    position: relative;
+    top: 3px;
+}
+#contact .msgwrap label.error {
+    display: block;
+    margin-left: 0;
+}
+#blog {
+    margin-top: 10px;
+}
+#blog #entrywrap {
+    clear: none;
+    float: left;
+    padding-left: 150px;
+    position: relative;
+    width: 485px;
+}
+#blog h1 {
+    margin: 24px 0 18px;
+}
+#blog h1 a {
+    color: #29475A;
+    font-size: 25px;
+    line-height: 28px;
+}
+#blog h3 {
+    border-bottom: 1px solid #BEC8D2;
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0 0;
+}
+#blog h3.category {
+    margin-left: -150px;
+    width: 635px;
+}
+#blog .right {
+    float: right;
+    margin-bottom: 10px;
+    width: 265px;
+}
+#blog a.back {
+    display: block;
+    font-family: Helvetica,Arial,Sans-Serif;
+    margin-bottom: 20px;
+}
+#blog a.back span {
+    background: url("../resources/ontc/blue-arrow.gif") no-repeat scroll -9px 0 transparent;
+    display: inline-block;
+    height: 11px;
+    margin-right: 5px;
+    position: relative;
+    top: 1px;
+    width: 9px;
+}
+.msie7 #blog a.back span {
+    top: -2px;
+}
+#inside #glow.blog-header {
+    background: url("../resources/ontc/blog-intro-glow.jpg") no-repeat scroll center top transparent;
+    height: 105px;
+    margin: 0 auto;
+}
+#inside a#subscribe {
+    background: url("../resources/ontc/blog-subscribe.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 48px;
+    margin: 30px -1px 0 0;
+    width: 172px;
+}
+#blog .entry, #blog .div {
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+}
+#blog .entry h3 {
+    border: medium none;
+    color: #29475A;
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 19px 0 0;
+}
+#blog .entry p {
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 13px;
+    line-height: 19px;
+    margin: 13px 0;
+}
+#blog .entry .author {
+    color: #8C9AA3;
+    float: left;
+    font-family: Helvetica,Arial,Sans-Serif;
+    margin-left: -150px;
+    position: relative;
+    width: 150px;
+}
+#blog .entry .author p, #blog .entry .author a {
+    font-size: 12px;
+}
+.msie7 #blog .entry .author {
+    margin-top: 25px;
+}
+#blog .entry .author p {
+    margin: 0;
+}
+#blog .entry .author p.count {
+    margin: 14px 0 0;
+}
+#blog .entry ul {
+    font-family: Helvetica,Arial,Sans-Serif;
+    margin: 0 0 15px 15px;
+}
+#blog .entry ul li {
+    font-size: 12px;
+    line-height: 1.75em;
+    list-style-type: disc;
+    margin: 1px 15px 7px;
+}
+#blog .navigation div {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#blog .metafooter, #blog .navigation {
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 12px;
+    margin: 7px 0 10px;
+}
+#blog .metafooter {
+    border-bottom: 1px dotted #CCCCCC;
+    border-top: 1px dotted #CCCCCC;
+    color: #8C9AA3;
+    margin: 15px 0 40px;
+    padding: 5px 0;
+}
+#blog .metafooter.single {
+    margin: 15px 0 26px;
+}
+#blog .metafooter a {
+    font-size: 12px;
+}
+#blog .metafooter span.pipe {
+    padding: 0 6px;
+}
+#blog .metafooter span.twitter {
+    float: right;
+}
+#blog .metafooter span.twitter-count {
+    float: right;
+    width: 95px;
+}
+.msie7 #blog .metafooter span.twitter {
+    position: relative;
+    top: -26px;
+}
+#blog .sidebar-wrap {
+    clear: both;
+    float: right;
+    margin-top: 15px;
+    width: 265px;
+}
+.msie7 #blog #sidebar-wrap, .msie6 #blog #sidebar-wrap {
+    margin-top: 25px;
+}
+#blog .sidebar {
+    width: 265px;
+}
+#blog .sidebar.top, #blog .sidebar.bottom {
+    background: url("../resources/ontc/sidebar-box.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 9px;
+    overflow: hidden;
+    width: 265px;
+}
+#blog .sidebar.bottom {
+    background-position: 0 -9px;
+}
+#blog .sidebar.middle {
+    background: url("../resources/ontc/sidebar-box.png") repeat-y scroll -265px 0 transparent;
+    float: left;
+}
+#blog .sidebar .sidebar-content {
+    clear: both;
+    display: block;
+    float: left;
+    padding: 6px 16px 5px 20px;
+}
+.msie7 #blog .sidebar .sidebar-content p, .msie6 #blog .sidebar .sidebar-content p {
+    width: 235px;
+}
+#blog .sidebar h4 {
+    color: #205F8A;
+    font-size: 18px;
+    margin: 0 0 8px;
+    width: 200px;
+}
+#blog .sidebar p {
+    font-size: 12px;
+}
+#blog .sidebar p#welcome {
+    margin-bottom: 18px;
+}
+#blog .sidebar ul {
+    font-size: 12px;
+    line-height: 22px;
+    list-style: none outside none;
+}
+#blog .sidebar ul.more {
+    line-height: 24px;
+}
+#blog .sidebar ul.more li.last {
+    line-height: 16px;
+    margin-top: 10px;
+}
+#blog .sidebar ul.more li.last a {
+    position: relative;
+    top: -7px;
+}
+#blog .sidebar ul.more li iframe {
+    border: medium none;
+    height: 21px;
+    overflow: hidden;
+    width: 90px;
+}
+#blog .sidebar a#request {
+    display: block;
+    margin: 6px 0 3px;
+}
+#blog .sidebar a#request span {
+    background: url("../resources/ontc/blue-arrow.gif") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 11px;
+    left: 4px;
+    position: relative;
+    top: 1px;
+    width: 9px;
+}
+.msie7 #blog .sidebar a#request span {
+    top: -2px;
+}
+#blog .sidebar #twit-div ul {
+    line-height: 18px;
+}
+#blog .sidebar #twit-div li {
+    padding-top: 12px;
+}
+#blog .sidebar #twit-div li a {
+    color: #8C9AA3;
+}
+#blog .sidebar #twit-div li span a {
+    color: #218AC7;
+}
+.blog-header h2 {
+    color: #FFFFFF;
+    cursor: pointer;
+    margin: 0;
+}
+#blog #blogsearch {
+    clear: left;
+    float: left;
+    margin: 13px 0 5px -2px;
+    width: 240px;
+}
+#blog input#s {
+    background: url("../resources/ontc/search-blog.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #29475A;
+    float: left;
+    font-size: 12px;
+    height: 31px;
+    outline: medium none;
+    padding-left: 15px;
+    width: 175px;
+}
+.msie #blog #blogsearch input#s {
+    padding-top: 7px;
+}
+#blog #blogsearch input#g {
+    background: url("../resources/ontc/search-blog.png") no-repeat scroll -190px 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    float: left;
+    height: 31px;
+    outline: medium none;
+    width: 38px;
+}
+#blog #blogsearch input#g:hover {
+    background-position: -417px 0;
+}
+#blog #blogsearch input#s.focus {
+    background-position: -227px 0;
+}
+#blog .entry #comments h3 {
+    font-size: 16px;
+    margin: 20px 0 25px;
+}
+#blog .entry #comments p {
+    margin: 0 0 8px;
+}
+#blog .entry #comments p.from {
+    margin: -34px 0 0 24px;
+    position: absolute;
+}
+#blog .entry #comments p.from {
+    color: #8C9AA3;
+    font-weight: bold;
+}
+#blog .entry #comments p.from small {
+    color: #8C9AA3;
+    font-size: 12px;
+    font-weight: normal;
+    padding-left: 3px;
+}
+#blog .entry blockquote {
+    border-left: 3px solid #97A3AD;
+    margin: 15px;
+    padding-left: 15px;
+}
+#blog .entry blockquote p {
+    color: #97A3AD;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 25px 0 25px 10px;
+}
+#blog .entry blockquote cite {
+    display: block;
+    margin-top: 6px;
+}
+#blog #comments fieldset {
+    margin: 2px 0 13px;
+    position: relative;
+}
+#blog #comments fieldset.textarea {
+    margin: 2px 0 1px;
+}
+#blog #comments fieldset.second div {
+    float: left;
+    margin-right: 10px;
+}
+#blog #comments fieldset.post .notice {
+    float: left;
+    line-height: 18px;
+    margin-right: 10px;
+    width: 340px;
+}
+#blog #comments input, #blog #comments textarea {
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 13px;
+    padding: 5px;
+}
+#blog #comments textarea {
+    height: 140px;
+    width: 473px;
+}
+#blog #comments input#submit {
+    background: url("../resources/ontc/post-comment.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    height: 26px;
+    margin-top: 3px;
+    width: 121px;
+}
+#blog #comments input#submit:hover {
+    background-position: 0 -26px;
+}
+#blog #comments label.infield {
+    color: #97A3AD;
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 13px;
+    font-weight: normal;
+    left: 0;
+    margin: 5px 7px;
+    position: absolute;
+    top: 0;
+}
+#blog .border {
+    border: 1px solid #C7CCCF;
+}
+#blog .comment-wrap {
+    clear: both;
+    float: left;
+    margin-bottom: 30px;
+}
+#blog .comment {
+    width: 485px;
+}
+#blog .comment.top, #blog .comment.bottom {
+    background: url("../resources/ontc/comment-bubble.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 22px;
+    overflow: hidden;
+    width: 485px;
+}
+#blog .bypostauthor .comment.top, #blog .bypostauthor .comment.bottom {
+    background: url("../resources/ontc/comment-bubble.png") no-repeat scroll -970px 0 transparent;
+}
+#blog .comment.bottom, #blog .bypostauthor .comment.bottom {
+    background-position: 0 -22px;
+    height: 9px;
+    margin-top: -5px;
+}
+#blog .bypostauthor .comment.bottom {
+    background-position: -970px -22px;
+}
+#blog .comment.middle {
+    background: url("../resources/ontc/comment-bubble.png") repeat-y scroll -485px 0 transparent;
+    float: left;
+}
+#blog .bypostauthor .comment.middle {
+    background: url("../resources/ontc/comment-bubble.png") repeat-y scroll -1455px 0 transparent;
+}
+#blog .comment .comment-content {
+    clear: both;
+    display: block;
+    float: left;
+    padding: 4px 17px 0;
+}
+#blog .icon {
+    background: url("../resources/ontc/blog-icons.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 16px;
+    margin: 3px 5px 0 0;
+    overflow: hidden;
+    width: 16px;
+}
+#blog .icon.rss {
+    background-position: 0 0;
+}
+#blog .icon.twitter {
+    background-position: 0 -16px;
+}
+#blog .icon.facebook {
+    background-position: 0 -32px;
+}
+#blog .icon.contact {
+    background-position: 0 -48px;
+}
+#blog .icon.comment {
+    background-position: 0 -64px;
+}
+#blog .icon.category {
+    background-position: 0 -80px;
+}
+.short-page #about {
+    padding-bottom: 147px;
+}
+#about .box .box-content h3 {
+    margin-bottom: 5px;
+}
+#about .box .box-content a:hover {
+    text-decoration: none;
+}
+#about .box .box-content a:hover span {
+    text-decoration: underline;
+}
+#about #sections {
+    margin: 16px 0 0;
+}
+#about #sections ul {
+    margin-right: 10px;
+    position: relative;
+}
+#about #sections li {
+    float: right;
+    list-style: none outside none;
+}
+#about #sections li a {
+    -moz-user-select: none;
+    color: #86929C;
+    float: left;
+    font-family: Verdana,Arial,Sans-Serif;
+    font-size: 13px;
+    padding-right: 25px;
+    text-decoration: none;
+}
+#about #sections li a span {
+    display: block;
+    float: left;
+    height: 37px;
+    line-height: 37px;
+    padding-right: 25px;
+}
+#about #sections li a strong {
+    display: inline-block;
+    font-weight: normal;
+    padding-top: 13px;
+}
+#about #sections li a:hover strong {
+    color: #218AC7;
+}
+#about #sections li a.current {
+    background: url("../../../resources/ontc/tour-menu.png") no-repeat scroll right 0 transparent;
+    color: #2A719B;
+}
+#about #sections li a.current span {
+    background: url("../../../resources/ontc/tour-menu.png") no-repeat scroll left 0 transparent;
+}
+#about #sections li a.current:hover strong {
+    color: inherit;
+}
+#about #sections .divider {
+    background: url("../../../resources/ontc/tour-menu.png") repeat-x scroll 0 -37px transparent;
+    font-size: 2px;
+    height: 3px;
+    position: relative;
+    top: 37px;
+    width: 100%;
+}
+#about #buzz {
+    width: 520px;
+}
+#about #buzz h3, #about #buzz h3 a {
+    color: #218AC7;
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 19px;
+    margin: 5px 0 8px;
+}
+#about h4.buzz, #about #buzz p {
+    margin-bottom: 30px;
+}
+#about h4.buzz {
+    width: auto;
+}
+#about #buzz p.first {
+    margin-bottom: 0;
+}
+#about #buzz-testimonials {
+    margin-left: 112px;
+    width: 330px;
+}
+#about #buzz-testimonials blockquote {
+    font-style: italic;
+    margin: 20px 0 50px;
+}
+#about #buzz-testimonials blockquote div {
+    background: url("../resources/ontc/buzz/quote.png") no-repeat scroll 0 0 transparent;
+    height: 27px;
+    margin: -5px 0 0 -47px;
+    position: absolute;
+    width: 36px;
+}
+#about #buzz-testimonials blockquote p {
+    color: #ABB2B8;
+    font-family: Georgia,'Times New Roman',Times,Serif;
+    font-size: 18px;
+    line-height: 23px;
+}
+#about #buzz-testimonials blockquote cite {
+    color: #75818B;
+    display: block;
+    font-family: Georgia,'Times New Roman',Times,Serif;
+    font-size: 14px;
+    padding-top: 12px;
+}
+#about #jobs {
+    padding: 10px 0 15px;
+    width: 660px;
+}
+#about #jobs h3 {
+    color: #043B5F;
+    font-family: myriad-pro-1,myriad-pro-2,Verdana,Arial,Sans-Serif;
+    font-size: 25px;
+    padding-bottom: 4px;
+}
+#about #jobs h4, #about #jobs p, #about #jobs li {
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+#about #jobs h4 {
+    color: #205F8A;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 8px;
+}
+#about #jobs ul {
+    margin: 0 0 0 16px;
+    padding-bottom: 14px;
+}
+#about #jobs li {
+    color: #C0CAD3;
+    line-height: 21px;
+    margin: 0;
+    padding-bottom: 6px;
+}
+#about #jobs li p {
+    color: #616E79;
+    margin: 0;
+    padding: 0;
+}
+#about #sticky {
+    background: url("../resources/ontc/jobs-sticky.png") no-repeat scroll 0 0 transparent;
+    height: 145px;
+    margin: 30px 0 0 720px;
+    position: absolute;
+    width: 228px;
+}
+#about #sticky p {
+    -moz-transform: rotate(0deg);
+    padding: 25px 30px;
+}
+#about #sticky p a {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 9px;
+}
+#about #sticky p a:hover {
+    text-decoration: none;
+}
+#partners .left-side {
+    float: left;
+    width: 556px;
+}
+#partners p {
+    padding-bottom: 17px;
+}
+#partners h1 {
+    padding: 0 360px 14px 0;
+}
+#partners h3 {
+    color: #205F8A;
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 19px;
+    margin: 15px 0 8px;
+}
+#partners h4 {
+    font-size: 13px;
+    font-weight: bold;
+}
+#partners ul {
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+#partners li {
+    background: url("../resources/ontc/partners-sprite.png") no-repeat scroll -208px 0 transparent;
+    height: 34px;
+    margin-bottom: 9px;
+}
+#partners li span {
+    margin-left: 40px;
+    position: relative;
+    top: 7px;
+}
+#partners .right-side {
+    float: left;
+    margin-left: 56px;
+    width: 280px;
+}
+#partners .right-side h3 {
+    margin: 0;
+}
+#partners .right-side p {
+    clear: none;
+    float: none;
+    font-family: Verdana,Arial,Sans-Serif;
+    line-height: 19px;
+    margin: 3px 8px 0 0;
+    padding: 0;
+}
+#partners form {
+    margin: 14px 0 4px;
+    min-height: 36px;
+}
+#partners a.button {
+    background: url("../resources/ontc/partners-sprite.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 36px;
+    width: 208px;
+}
+#partners a.button:hover {
+    background: url("../resources/ontc/partners-sprite.png") no-repeat scroll 0 -36px transparent;
+}
+#partners .enterprise a.button {
+    background: url("../resources/ontc/request-more.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 36px;
+    width: 210px;
+}
+#partners .enterprise a.button:hover {
+    background: url("../resources/ontc/request-more.png") no-repeat scroll 0 -36px transparent;
+}
+#partners fieldset {
+    display: none;
+}
+#partners label {
+    display: block;
+    font-family: Verdana,Arial,Sans-Serif;
+    margin: 10px 0 2px;
+}
+#partners label.error {
+    margin: 0;
+}
+#partners label.first {
+    margin: 0 0 2px;
+}
+#partners input.text {
+    padding: 4px;
+    width: 230px;
+}
+#partners textarea {
+    font-size: 11px;
+    height: 80px;
+    overflow: auto;
+    padding: 5px;
+    width: 285px;
+}
+#partners input#submit {
+    background: url("../resources/ontc/partners-sprite.png") no-repeat scroll 0 -72px transparent;
+    border: medium none;
+    cursor: pointer;
+    float: right;
+    height: 34px;
+    margin: 10px 9px 0 0;
+    width: 78px;
+}
+#partners input#submit:hover {
+    background-position: 0 -106px;
+}
+#partners #loading {
+    float: right;
+    margin: 10px 9px 0 0;
+}
+#partners #response li {
+    background: none repeat scroll 0 0 transparent;
+    color: green;
+    font-weight: bold;
+    height: inherit;
+    margin: 10px 0 2px;
+}
+#partners #advantages li {
+    background: none repeat scroll 0 0 transparent;
+    font-size: 12px;
+    height: inherit;
+    list-style: circle outside none;
+    margin-left: 20px;
+}
+#partners .box, #partners .box {
+    width: 342px;
+}
+#partners .box.top, #partners .box.bottom {
+    background: url("../resources/ontc/gray-box-med.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 9px;
+    overflow: hidden;
+    width: 342px;
+}
+#partners .box.bottom {
+    background-position: 0 -9px;
+    margin-bottom: 20px;
+}
+#partners .box.middle {
+    background: url("../resources/ontc/gray-box-med.png") repeat-y scroll -342px 0 transparent;
+    float: left;
+}
+#partners .box .box-content {
+    clear: both;
+    display: block;
+    float: left;
+    font-family: Helvetica,Arial,Sans-Serif;
+    padding: 6px 14px 5px 21px;
+}
+#partners .box .box-content h3 {
+    margin-bottom: 5px;
+}
+#partners .box .box-content a:hover {
+    text-decoration: none;
+}
+#partners .box .box-content a:hover span {
+    text-decoration: underline;
+}
+#partners table {
+    border: 1px solid #C7CCCF;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin: 6px 0;
+}
+#partners table th {
+    background: none repeat scroll 0 0 #D7EEFC;
+    border: 1px solid #C7CCCF;
+    padding: 5px;
+}
+#partners table td {
+    border: 1px solid #C7CCCF;
+    padding: 5px 8px;
+}
+#partners span.note {
+    font-size: 11px;
+
+    margin-bottom: 15px;
+}
+#policy .text {
+    width: 540px;
+}
+#policy h1 {
+    font-family: myriad-pro-1,myriad-pro-2,Verdana,Arial,Sans-Serif;
+    padding-bottom: 14px;
+}
+#policy h2 {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 7px 0;
+}
+#policy p {
+    padding-bottom: 17px;
+}
+#policy p strong {
+    font-style: italic;
+}
+#policy ul {
+    font-size: 13px;
+    line-height: 20px;
+    list-style: disc outside none;
+    padding: 0 0 12px 16px;
+}
+#policy ul li {
+    padding-bottom: 5px;
+}
+#policy ol {
+    font-size: 13px;
+    line-height: 20px;
+    list-style: lower-alpha outside none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0 0 12px;
+}
+#policy ol li {
+    padding-bottom: 5px;
+}
+#find {
+    background: url("../resources/ontc/login-background.jpg") repeat-x scroll 0 0 #205B7E;
+    color: #FFFFFF;
+    min-width: 768px;
+    text-shadow: 0 1px 1px #052C3D;
+    width: 100%;
+}
+#find #frame {
+    background: url("../resources/ontc/find-box.jpg") no-repeat scroll center top transparent;
+    margin: 0 auto;
+    min-height: 100%;
+    overflow: auto;
+}
+#find .content {
+    padding-top: 116px;
+    width: 439px;
+}
+#find #logo-large {
+    margin: 27px 0 0 -2px;
+}
+#find h1 {
+    font-size: 17px;
+    margin: 10px 0 18px;
+}
+#find h2, #login h3, #login small {
+    color: #003057;
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 17px;
+}
+#find h3 {
+    color: #FFFFFF;
+    font-size: 15px;
+    margin: 10px 0 0;
+}
+#find small {
+    color: #B6E7FF;
+    font-size: 12px;
+    font-style: italic;
+}
+#find a {
+    color: #FFFFFF;
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 19px;
+}
+#find form {
+    margin: 8px 0 0 -1px;
+}
+#find form div {
+    position: relative;
+    z-index: 0;
+}
+#find label.infield {
+    color: #2E5D7C;
+    font-size: 17px;
+    left: 13px;
+    position: absolute;
+    text-shadow: 0 1px 1px #FFFFFF;
+    top: 9px;
+    z-index: 0;
+}
+.msie #find label.infield {
+    top: 10px;
+}
+#find label.infield.on {
+    color: #238ACF;
+}
+#find input.field {
+    background: url("../resources/ontc/find-fields.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    float: left;
+    height: 41px;
+    margin-right: 7px;
+    outline: medium none;
+    overflow: hidden;
+    width: 323px;
+}
+#find input#name.field {
+    padding: 0 12px;
+}
+#find input#name.field:active, #find input#name.field:focus {
+    background-position: 0 -41px;
+}
+.msie #find input.field {
+    line-height: 37px;
+}
+.firefox #find input.field {
+    line-height: 17px;
+}
+#find input#go.field {
+    background-position: -347px 0;
+    cursor: pointer;
+    margin: 0;
+    width: 86px;
+}
+form {
+    margin: 8px 0 0 -1px;
+}
+form div {
+    position: relative;
+    z-index: 0;
+}
+label.infield {
+    color: #2E5D7C;
+    font-size: 17px;
+    left: 13px;
+    position: absolute;
+    text-shadow: 0 1px 1px #FFFFFF;
+    top: 9px;
+    z-index: 0;
+}
+.msie label.infield {
+    top: 10px;
+}
+label.infield.on {
+    color: #238ACF;
+}
+label.infield.second {
+    left: 238px;
+}
+input.field {
+    background: url("../resources/ontc/login-fields.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    float: left;
+    height: 39px;
+    margin-right: 7px;
+    outline: medium none;
+    overflow: hidden;
+    padding: 0 12px;
+    width: 194px;
+}
+input.field:active, input.field:focus {
+    background-position: 0 -39px;
+}
+.msie input.field {
+    line-height: 37px;
+}
+.firefox input.field {
+    line-height: 17px;
+}
+input#go.field {
+    background-position: -218px 0;
+    cursor: pointer;
+    margin: 0;
+    width: 88px;
+}
+input.checkbox {
+    margin: 6px 5px 1px 1px;
+}
+label {
+    clear: none;
+    display: inline;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0;
+}
+#find #results {
+    margin-top: 70px;
+}
+#find #results .arrow {
+    background: url("../resources/ontc/white-arrows.png") no-repeat scroll 0 0 transparent;
+    display: inline;
+    height: 13px;
+    margin: 6px 0 0 4px;
+    overflow: hidden;
+    position: absolute;
+    text-decoration: none;
+    width: 7px;
+}
+#find #results h2 {
+    margin-bottom: 20px;
+}
+#find #results li {
+    margin-bottom: 20px;
+}
+#footer {
+    background: url("../resources/ontc/footer-sprite.png") repeat-x scroll 0 -117px #96A3B0;
+    border-top: 1px solid #647984;
+    font-family: Helvetica,Arial,Sans-Serif;
+    height: 143px;
+    text-shadow: 0 1px 1px #6B7E8A;
+}
+.short-page #footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+#footer .content {
+    padding-top: 25px;
+    width: 962px;
+}
+#footer .left {
+    margin-left: 28px;
+    width: 370px;
+}
+#footer .right {
+    margin-right: 18px;
+}
+#footer #logo-footer {
+    background: url("../resources/ontc/footer-sprite.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 25px;
+    margin: 5px 0 7px;
+    width: 101px;
+}
+#blog .sidebar a#request {
+    display: block;
+    margin: 6px 0 3px;
+}
+#foooter p {
+    color: #BBC2C7;
+}
+#footer p, #footer p a {
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 22px;
+    text-decoration: none;
+}
+#footer p a:hover {
+    text-decoration: underline;
+}
+#footer ul {
+    background: url("../resources/ontc/footer-sprite.png") no-repeat scroll 0 -25px transparent;
+    float: left;
+    margin-left: 30px;
+    padding: 5px 0 5px 30px;
+}
+#footer ul.first {
+    background: none repeat scroll 0 0 transparent;
+}
+#footer ul li a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 25px;
+    padding: 0 7px;
+}
+#browser-warning {
+    background-color: #FCFDDE;
+    border-bottom: 1px solid #06253E;
+    color: #2E2E29;
+    font-size: 15px;
+    padding: 17px 0 19px;
+    text-align: center;
+    width: 100%;
+}
+#browser-warning a {
+    color: #0070CC;
+    font-size: 15px;
+}
+#browser-warning span {
+    font-size: 13px;
+    margin-left: 5px;
+}
+#browser-warning span a {
+    font-size: 13px;
+}

@@ -1,0 +1,22 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div id="pictures">
+  <h1>一家团契照片 Gallery</h1>
+  <p> 
+  {foreach $pictures as $pic}
+  <a rel="group" href="../cadmin/{$pic.photo}" title="{$pic.notes|escape:'html'} - {$pic.author|escape:'html'}">
+  <img title="{$pic.notes|escape:'html'}" src="../cadmin/{$pic.photo}" width="168px" height="100px" border="0" /></a> 
+  {/foreach} 
+  </p>
+</div>
+<script language="javascript" type="text/javascript">
+$(document).ready(function() {
+  $("a[rel=group]").fancybox({
+    'transitionIn'          : 'none',
+    'transitionOut'         : 'none',
+    'titlePosition'         : 'over',
+    'titleFormat'           : function(title, currentArray, currentIndex, currentOpts) {
+      return '<span id="fancybox-title-over">图像 ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+    }
+  });
+});
+</script>

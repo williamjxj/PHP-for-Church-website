@@ -1,0 +1,46 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+{*{if {$header.logo} && {$header.logo}!=''} *}
+<div id="logo" style="cursor:pointer;" onclick='window.location.href="http://www.surreyonefamily.ca"'> {if is_array($header.logo)}
+  {foreach $header.logo as $l}
+  {$l}
+  {/foreach}
+  {else}
+  {$header.logo}
+  {/if} </a> </div>
+{*{/if}*}
+<div id="upper">
+  <ul>
+    <li><img alt="Member login" src="{$config.path}images/lock.png">&nbsp;<a id="login_signup" href="login.php">一家团契用户注册</a></li>
+    <li><a href="{$config.path}/templates/help.tpl.html" id="help" title="帮助信息">帮助信息</a></li>
+    <!--li>温哥华当前时间： {$smarty.now|date_format:'%Y-%m-%d %H:%M'}</li-->
+    <li><span id="st" style="cursor: pointer;" onmouseover="$(this).css('color', 'red');" onmouseout="$(this).css('color', 'white');">切至繁体版</span></li>    
+  </ul>
+</div>
+
+<div id="div_ls" style="display:none;"></div>
+<div id="menu"> {include file="{$menu_template}"} </div>
+
+<div class="clear"></div>
+
+<script language="javascript" type="text/javascript">
+$(document).ready(function() {
+  $('#login_signup').click(function(e) {
+    e.preventDefault();
+    var t2 = $('#div_ls');
+    if($(t2).is(':visible')) {
+      $(t2).hide();
+    }
+    else {
+      if($(t2).html().length>0) {
+        $(t2).hide().fadeIn(200);
+      }
+      else {
+        $(t2).load($(this).attr('href')).hide().fadeIn(200);
+      }
+    }
+    return false;
+  });
+  $("a#help").fancybox(); 
+});
+</script>

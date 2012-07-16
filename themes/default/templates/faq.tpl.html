@@ -1,0 +1,100 @@
+{$url={$smarty.server.SCRIPT_NAME}}
+<link rel="stylesheet" type="text/css" href="{$config.path}css/faq.css" />
+<script type="text/javascript" src="https://www.google.com/jsapi?key=ABQIAAAAfaiHjMM1Yoszm3tqlAmHdxRUqlmJWYRYQiJw4sPGIe77ucK63hTQ4Vxloi2yN0LXTNSwNI1i2xEUUw"></script>
+<script type="text/javascript">
+ google.load("jquery", "1.6.4");
+ google.load("jqueryui", "1.8.16");
+</script>
+<link type="text/css" rel="stylesheet" href="{$config.ipath}formValidator//validationEngine.jquery.css" />
+<script language="javascript" type="text/javascript" src="{$config.ipath}formValidator/jquery.validationEngine-en.js"></script>
+<script language="javascript" type="text/javascript" src="{$config.ipath}formValidator/jquery.validationEngine.js"></script>
+<script language="javascript" type="text/javascript">
+$(document).ready(function() {
+  $("div#topic ul.questions a, div#why ul li a").each(function() {
+   $(this).click(function() {
+    var t = $(this).attr('href');
+    $(t).closest('div').effect("highlight", {}, 3000);
+   });
+  });
+  $('#tab1').click(function(e) {
+    e.preventDefault();
+    $('a.current', '#sections ul').removeClass('current');
+    $(this).addClass('current');
+    $('#div_main2').hide();
+    $('#div_main1').show();
+  });
+  $('#tab2').click(function(e) {
+    e.preventDefault();
+    $('#div_main1').hide();
+      $('a.current', '#sections ul').removeClass('current');
+      $(this).addClass('current');
+    if($('#div_main2').length && (! /^\s*$/.test($('#div_main2').text()))) {
+	  $('#div_main2').show();
+    }
+    else {
+      $('#div_main2').load('{$url}?js_get_form=1');
+    }
+  });
+});
+</script>
+<div id="inside">
+  <div id="header"> {if isset($header) && is_array($header) && count($header)>0}
+    <div id="sections">
+      <div class="divider"></div>
+      <ul>
+        {foreach $header as $h}
+        <li>{$h}</li>
+        {/foreach}
+      </ul>
+    </div>
+    <div class="clear"></div>
+    {/if}</div>
+  <div id="container">
+    <div id="div_main1">
+      <div id="left">
+        <div id="why" class="content">
+          <div class="boxwrap">
+            <div class="box top"></div>
+            <div class="box middle">
+              <div class="box-content">
+                <h4>ONTC FAQs:</h4>
+                <ul>
+                  {foreach $left as $l}
+                  <li>-&nbsp;<a href="#a_{$l[0]}" title="{$l[2]|escape:'html'}" class="ajax">{$l[1]}</a></li>
+                  {/foreach}
+                </ul>
+              </div>
+            </div>
+            <div class="box bottom"></div>
+          </div>
+        </div>
+      </div>
+      {if isset($questions)}
+      
+      {$count=1}
+      <div id="support" class="content">
+        <div id="topic">
+          <ul class="questions">
+            {foreach $questions as $q}
+            <li class="q{$count}">. <a href="#a_{$q[0]}" title="{$q[2]|escape:'html'}">{$q[1]}</a></li>
+            {$count=$count+1}
+            {/foreach}
+          </ul>
+          {/if}
+          
+          {if isset($main)}
+          {if is_array($main)}
+          {foreach $main as $m}
+          <div> {$m} <a href="#" class="return-top" onClick="window.scrollTo(0,0); return false;">Back to top</a> </div>
+          {/foreach}
+          {else}
+          {$main}
+          {/if}
+          {/if}
+          
+          {if isset($questions)} </div>
+      </div>
+      {/if} </div>
+    <div id="div_main2"></div>
+  </div>
+</div>
