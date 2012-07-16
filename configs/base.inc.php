@@ -29,20 +29,10 @@ class BaseClass extends Smarty
  
 	if (preg_match("/^(192\.168|127\.)/", $_SERVER['REMOTE_ADDR']) || preg_match("/::1/", $_SERVER['REMOTE_ADDR'])) { 
 		$dsn = array (
-			'phptype' => 'mysqli',
-			'username' => 'church',
-			'password' => 'Benjamin001!',
-			'hostspec' => 'localhost',
-			'database' => 'church'
 		);
 	}
 	else {
 		$dsn = array (
-			'phptype' => 'mysqli',
-			'username' => 'church',
-			'password' => 'Benjamin001!',
-			'hostspec' => 'williamjxj.ipowermysql.com',
-			'database' => 'church'
 		);
 	}  
   
