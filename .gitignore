@@ -1,4 +1,5 @@
-include/*
-images/*
-templates_c/*
-themes/default/images/*
+include/
+images/
+templates_c/
+themes/default/images/
+configs/
